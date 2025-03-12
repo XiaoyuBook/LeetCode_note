@@ -46,4 +46,4 @@ int maxVowels(char* s, int k) {
   >            continue;
   >        }
 
-<div style="text-align: right;"> 完成时间：2025年3月12日09点25分</div>
+<p align="right">完成时间：2025年3月12日09点25分</p>
