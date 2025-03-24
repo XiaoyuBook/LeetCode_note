@@ -133,6 +133,7 @@
   <li><input type="checkbox"> <a href="./Monotone stack/contribution.md">4. 贡献法</a></li>
   <li><input type="checkbox"> <a href="./Monotone stack/min_lexicographical_order.md">5. 最小字典序</a></li>
 </ul>
+</details>
 
 <details>
   <summary>
