@@ -1,15 +1,15 @@
-# [定长滑动窗口(进阶题)](https://leetcode.cn/discuss/post/0viNMK/)
+# [z定长滑动窗口(进阶题)](https://leetcode.cn/discuss/post/0viNMK/)
 - [x] [3439.重新安排会议得到最多空余时间 I 1729](#[3439. 重新安排会议得到最多空余时间 I])
 - [x] [2134.最少交换次数来组合所有的 1 II 1748](#2134-最少交换次数来组合所有的-1-ii)
 - [ ] [1297.子串的最大出现次数 1748](#1297-子串的最大出现次数)
 - [x] [2653.滑动子数组的美丽值 1786](#2653. 滑动子数组的美丽值)
-- [ ] 1888.使二进制字符串字符交替的最少反转次数 2006
-- [ ] 567.字符串的排列
-- [ ] 438.找到字符串中所有字母异位词
-- [ ] 30.串联所有单词的子串
-- [ ] 2156.查找给定哈希值的子串 2063
-- [ ] 2953.统计完全子字符串 2449
-- [ ] 1016.子串能表示从 1 到 N 数字的二进制串 做到 O(∣s∣)
+- [ ] [1888.使二进制字符串字符交替的最少反转次数 2006](#1888-使二进制字符串字符交替的最少反转次数)
+- [ ] [567.字符串的排列](#567-字符串的排列)
+- [ ] [438.找到字符串中所有字母异位词](#438-找到字符串中所有字母异位词)
+- [ ] [30.串联所有单词的子串](#30-串联所有单词的子串)
+- [ ] [2156.查找给定哈希值的子串 2063](#2156-查找给定哈希值的子串)
+- [ ] [2953.统计完全子字符串 2449](#2953-统计完全子字符串)
+- [ ] [1016.子串能表示从 1 到 N 数字的二进制串 做到 O(∣s∣)](#1016-子串能表示从-1-到-n-数字的二进制串)
 - [ ] 683.K 个关闭的灯泡（会员题）做到 O(n)
 - [ ] 2067.等计数子串的数量（会员题）
 - [ ] 2524.子数组的最大频率分数（会员题）
@@ -127,7 +127,7 @@ int minSwaps(int* nums, int numsSize) {
 ```c
 int* getSubarrayBeauty(int* nums, int numsSize, int k, int x, int* returnSize) {
     int *arr = (int*)malloc((numsSize - k + 1)*sizeof(int));   // 存储美丽值
-    int *temp = (int*)calloc(sizeof(int),101);              // 统计元素的频率
+    int *temp = (int*)calloc(sizeof(int),101);                       // 统计元素的频率
     *returnSize = numsSize - k + 1;
     int i=0,j=0,sz;
     // 处理第一个窗口的元素
@@ -136,10 +136,10 @@ int* getSubarrayBeauty(int* nums, int numsSize, int k, int x, int* returnSize) {
     }
     for(i = 0; i + k <= numsSize; i++) {
         if(i != 0 ) {
-            temp[nums[i - 1] + 50]--;                     // 左边的出去
+            temp[nums[i - 1] + 50]--;                              // 左边的出去
             temp[nums[i + k - 1] + 50]++;                     // 右边的进来
         }
-        for(j = 0, sz = x; j < 100; j++) {
+        for(j = 0, sz = x; j < 100; j++) {                        // 每次均会重置窗口大小
             if(temp[j] == 0) continue;
             sz -= temp[j];
             if(sz <= 0) break;
@@ -166,3 +166,37 @@ int* getSubarrayBeauty(int* nums, int numsSize, int k, int x, int* returnSize) {
 - j-50<0即是负数也就是美丽值本身，因为我们加了50作为偏移量，因此要减去，j-50>0则说明为正数，美丽值为0
 
 <p align="right">完成时间：2025年3月19日21点39分</p>
+
+## [1888. 使二进制字符串字符交替的最少反转次数](https://leetcode.cn/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/)
+
+给你一个二进制字符串 `s` 。你可以按任意顺序执行以下两种操作任意次：
+
+- **类型 1 ：删除** 字符串 `s` 的第一个字符并将它 **添加** 到字符串结尾。
+- **类型 2 ：选择** 字符串 `s` 中任意一个字符并将该字符 **反转** ，也就是如果值为 `'0'` ，则反转得到 `'1'` ，反之亦然。
+
+请你返回使 `s` 变成 **交替** 字符串的前提下， **类型 2** 的 **最少** 操作次数 。
+
+我们称一个字符串是 **交替** 的，需要满足任意相邻字符都不同。
+
+- 比方说，字符串 `"010"` 和 `"1010"` 都是交替的，但是字符串 `"0100"` 不是。
+
+```c
+
+```
+
+
+
+## [567. 字符串的排列](https://leetcode.cn/problems/permutation-in-string/)
+
+
+
+## [438. 找到字符串中所有字母异位词](https://leetcode.cn/problems/find-all-anagrams-in-a-string/)
+
+## [30. 串联所有单词的子串](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/)
+
+## [2156. 查找给定哈希值的子串](https://leetcode.cn/problems/find-substring-with-given-hash-value/)
+
+## [2953. 统计完全子字符串](https://leetcode.cn/problems/count-complete-substrings/)
+
+## [1016. 子串能表示从 1 到 N 数字的二进制串](https://leetcode.cn/problems/binary-string-with-substrings-representing-1-to-n/)
+
