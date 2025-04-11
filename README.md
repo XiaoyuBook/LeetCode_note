@@ -34,15 +34,7 @@
             </ul>
           </details>
         </li>
-        <li>
-          <details>
-            <summary>2.2 求最短/最小</summary>
-            <ul>
-              <li><input type="checkbox"> <a href="./Sliding window with double pointer/variable_length_min_primary.md">2.2.1 求最短/最小（基础）</a></li>
-              <li><input type="checkbox"> <a href="./Sliding window with double pointer/variable_length_min_advanced.md">2.2.2 求最短/最小（进阶）</a></li>
-            </ul>
-          </details>
-        </li>
+           <li><input type="checkbox"> <a href="./Sliding window with double pointer/variable_length_min_primary.md">2.2求最短/最小</a></li>
         <li>
           <details>
             <summary>2.3 求子数组个数</summary>
@@ -122,6 +114,7 @@
 </ul>
 </details>
 
+
 <details>
   <summary>
     <a href="https://leetcode.cn/discuss/post/9oZFK9/" target="_blank">3.单调栈</a>
@@ -134,7 +127,6 @@
   <li><input type="checkbox"> <a href="./Monotone stack/min_lexicographical_order.md">5. 最小字典序</a></li>
 </ul>
 </details>
-
 <details>
   <summary>
     <a href="https://leetcode.cn/discuss/post/YiXPXW/" target="_blank">4.网格图</a>
