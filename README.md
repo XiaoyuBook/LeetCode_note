@@ -29,19 +29,19 @@
           <details>
             <summary>2.1 求最长/最大</summary>
             <ul>
-              <li><input type="checkbox"> <a href="./Sliding window with double pointer/variable_length_max_primary.md">2.1.1 求最长/最大（基础）</a></li>
+              <li><input type="checkbox"checked> <a href="./Sliding window with double pointer/variable_length_max_primary.md">2.1.1 求最长/最大（基础）</a></li>
               <li><input type="checkbox"> <a href="./Sliding window with double pointer/variable_length_max_advanced.md">2.1.2 求最长/最大（进阶）</a></li>
             </ul>
           </details>
         </li>
-           <li><input type="checkbox"> <a href="./Sliding window with double pointer/variable_length_min_primary.md">2.2求最短/最小</a></li>
+           <li><input type="checkbox"checked> <a href="./Sliding window with double pointer/variable_length_min.md">2.2求最短/最小</a></li>
         <li>
           <details>
             <summary>2.3 求子数组个数</summary>
             <ul>
-              <li><input type="checkbox"> <a href="./Sliding window with double pointer/variable_length_count_longer_valid.md">2.3.1 越长越合法</a></li>
-              <li><input type="checkbox"> <a href="./Sliding window with double pointer/variable_length_count_shorter_valid.md">2.3.2 越短越合法</a></li>
-              <li><input type="checkbox"> <a href="./Sliding window with double pointer/variable_length_count_exact.md">2.3.3 恰好型滑动窗口</a></li>
+              <li><input type="checkbox"checked> <a href="./Sliding window with double pointer/variable_length_count_longer_valid.md">2.3.1 越长越合法</a></li>
+              <li><input type="checkbox"checked> <a href="./Sliding window with double pointer/variable_length_count_shorter_valid.md">2.3.2 越短越合法</a></li>
+              <li><input type="checkbox"checked> <a href="./Sliding window with double pointer/variable_length_count_exact.md">2.3.3 恰好型滑动窗口</a></li>
             </ul>
           </details>
         </li>
@@ -114,7 +114,6 @@
 </ul>
 </details>
 
-
 <details>
   <summary>
     <a href="https://leetcode.cn/discuss/post/9oZFK9/" target="_blank">3.单调栈</a>
@@ -127,6 +126,8 @@
   <li><input type="checkbox"> <a href="./Monotone stack/min_lexicographical_order.md">5. 最小字典序</a></li>
 </ul>
 </details>
+
+
 <details>
   <summary>
     <a href="https://leetcode.cn/discuss/post/YiXPXW/" target="_blank">4.网格图</a>
@@ -706,3 +707,5 @@
   <li><input type="checkbox"> <a href="./Character string/other.md">10. 其他</a></li>
 </ul>
 </details>
+
+
